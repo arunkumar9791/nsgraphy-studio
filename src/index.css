@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-tamil: "Noto Serif Tamil", serif;
+  --font-logo: "Michroma", sans-serif;
+
+  /* Tamil wedding palette */
+  --color-maroon: #7a0f1c;   /* kumkum maroon / Kanjeevaram border */
+  --color-kumkum: #b3122e;   /* bright kumkum red */
+  --color-silk: #c2185b;     /* Kanjeevaram silk magenta */
+  --color-gold: #d4a017;     /* temple gold */
+  --color-manjal: #f4b400;   /* turmeric yellow */
+  --color-marigold: #f28c00; /* marigold garland */
+  --color-leaf: #1e6b3a;     /* banana / mango leaf green */
+  --color-jasmine: #fff8ec;  /* malli (jasmine) cream */
+  --color-sandal: #f6e7cb;   /* sandalwood */
+  --color-ink: #3b1f14;      /* deep brown text */
+  --color-muted: #7a5c4a;    /* soft brown text */
+
+  /* Logo wordmark */
+  --color-logo-orange: #e8963a;
+  --color-logo-teal: #3a9aa6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-jasmine);
+  color: var(--color-ink);
+}
+
+/* Kolam (rangoli) line-and-dot pattern */
+.kolam-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23F4B400' stroke-opacity='.35' stroke-width='1.2'%3E%3Cpath d='M24 6 Q34 14 42 24 Q34 34 24 42 Q14 34 6 24 Q14 14 24 6Z'/%3E%3Ccircle cx='24' cy='24' r='4'/%3E%3C/g%3E%3Cg fill='%23F4B400' fill-opacity='.55'%3E%3Ccircle cx='0' cy='0' r='1.6'/%3E%3Ccircle cx='48' cy='0' r='1.6'/%3E%3Ccircle cx='0' cy='48' r='1.6'/%3E%3Ccircle cx='48' cy='48' r='1.6'/%3E%3Ccircle cx='24' cy='24' r='1.4'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 48px 48px;
+}
+
+/* Thoranam: mango leaves and marigolds hanging from a string */
+.thoranam {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='22' viewBox='0 0 36 22'%3E%3Cpath d='M0 1.5 H36' stroke='%237A0F1C' stroke-width='1.5'/%3E%3Cpath d='M9 2 C3 8 5 16 9 21 C13 16 15 8 9 2Z' fill='%231E6B3A'/%3E%3Cpath d='M9 4 V19' stroke='%23A5D6A7' stroke-width='.6'/%3E%3Ccircle cx='27' cy='7' r='4.5' fill='%23F28C00'/%3E%3Ccircle cx='27' cy='7' r='2' fill='%23F4B400'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 36px 22px;
+}
+
+/* Temple-gopuram zigzag border in gold */
+.temple-border {
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14' viewBox='0 0 24 14'%3E%3Cpath d='M0 14 L12 2 L24 14Z' fill='%23D4A017'/%3E%3Ccircle cx='12' cy='9' r='1.6' fill='%237A0F1C'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 24px 14px;
+}
